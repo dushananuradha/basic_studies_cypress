@@ -1,8 +1,8 @@
-describe('launch app', () => {
-    it('app testing', () => {
-        cy.visit("https://www.kdu.ac.lk/")
-        cy.contains("Tenders")
-        cy.contains("Tenders").click()
-        cy.url().should("include","/tender-notices")
+describe('Login Suite', () => {
+    it('Login Testing', () => {
+        cy.visit("https://www.coursera.org/learn/machine-learning?authMode=login")
+        cy.get('input[type="email"]').type('')
+        cy.get('input[type="password"]').type('')
+        cy.get('button[type="submit"]').click()
     });
 })
