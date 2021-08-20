@@ -8,7 +8,7 @@ class HomePage {
     }
     static getTitle(){
         cy.get('.page-title').invoke('text').then((text1) => {
-            expect(text1).to.eq.apply('Automation Practice')
+            expect(text1).to.eq('Automation Practice')
         })
     }
 
@@ -17,12 +17,12 @@ class HomePage {
         cy.get('#dropdown-class-example').select('Selenium').should('have.value','option1')
     }
 
-    static searchCountry(){
+    static searchCountry(){ 
         //t'type' - to type any text in a textbox
         cy.get('#autocomplete').type('can')
         //ui-menu-item is a class
         //each to traverse all elements in an array
-        cy.get('.ui-menu-item').each(($e1, $index, $list)=>{
+        cy.get('.ui-menu-item div').each(($e1, $index, $list)=>{
             if($e1.text()==='canada'){
                 cy.wrap($e1).click()
             }
