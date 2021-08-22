@@ -26,8 +26,8 @@ class RegistrationPage {
 
     static submitForm(){
         cy.get('input[type="button"]').click().wait(4000)
-        cy.get('.nf-response-msg').invoke('text').then((text2)=> {
-            expect(text2).to.include('Thank you for registering for our event.')
+        cy.get('.nf-response-msg').invoke('text').then((text2) =>{
+            expect(text2).to.include('Thank you')
         })
     }
 

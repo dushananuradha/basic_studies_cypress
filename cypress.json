@@ -1,5 +1,6 @@
 {
-    
+    "reporter":"mochawesome",
+    "testFiles": "**/*.feature",
     "env":
     {
         "url":"https://codenboxautomationlab.com/"

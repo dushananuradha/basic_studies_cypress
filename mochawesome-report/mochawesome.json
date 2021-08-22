@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-08-21T14:44:53.688Z",
+    "end": "2021-08-21T14:45:24.724Z",
+    "duration": 31036,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d675c1d0-2559-4027-8b84-fe01049fb3d3",
+      "title": "",
+      "fullFile": "cypress/integration/2-advanced-examples/myCodeInboxTest.js",
+      "file": "cypress/integration/2-advanced-examples/myCodeInboxTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5f02c78f-2c0a-403f-bd1f-69adb980e1bc",
+          "title": "CodeInbox Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Home Page Test cases",
+              "fullTitle": "CodeInbox Test Suite Home Page Test cases",
+              "timedOut": null,
+              "duration": 20922,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePage.default.getTitle();\n_HomePage.default.getDropDownOption();\n_HomePage.default.searchCountry();\n_HomePage.default.clickonRegForm();",
+              "err": {},
+              "uuid": "e32562b7-c769-4baa-9155-7417e0fdb681",
+              "parentUUID": "5f02c78f-2c0a-403f-bd1f-69adb980e1bc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Registration Page Test cases",
+              "fullTitle": "CodeInbox Test Suite Registration Page Test cases",
+              "timedOut": null,
+              "duration": 6335,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_RegistrationPage.default.getFirstName('Dushan');\n_RegistrationPage.default.getLastName('Anuradha');\n_RegistrationPage.default.getEmail('ohdatest@gmail.com');\n_RegistrationPage.default.selectDropDown();\n_RegistrationPage.default.selectCheckBox();\n_RegistrationPage.default.submitForm();",
+              "err": {
+                "message": "AssertionError: expected '' to include 'Thank you'",
+                "estack": "AssertionError: expected '' to include 'Thank you'\n    at Context.eval (https://codenboxautomationlab.com/__cypress/tests?p=cypress/integration/2-advanced-examples/myCodeInboxTest.js:268:24)",
+                "diff": null
+              },
+              "uuid": "0b0cbfe9-480e-4f00-a285-0b7f8b95499a",
+              "parentUUID": "5f02c78f-2c0a-403f-bd1f-69adb980e1bc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e32562b7-c769-4baa-9155-7417e0fdb681"
+          ],
+          "failures": [
+            "0b0cbfe9-480e-4f00-a285-0b7f8b95499a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 27257,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
